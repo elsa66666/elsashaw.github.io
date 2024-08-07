@@ -3,16 +3,644 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>All About Mengxi Xiao</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/Healing.png" type="image/x-icon">
+
+    <!-- Fonts Poppins: https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
+<main>
+    <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+            <figure class="avatar-box">
+                <img src="./assets/images/personal-photo.png" alt="My Image" width="80">
+            </figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Mengxi Xiao / 肖梦溪">Mengxi Xiao / 肖梦溪</h1>
+                <!--p class="title">Master Student</p-->
+                <p style="margin-top: 5px;"><a href="https://github.com/elsa66666" class="link-text" style="color: var(--white-2); font-size: var(--fs-8);" target="_blank">[Github]</a> <a href="https://scholar.google.com.hk/citations?user=Edw9urcAAAAJ" class="link-text" style="color: var(--white-2); font-size: var(--fs-8);" target="_blank">[Google Scholar]</a></p>
+            </div>
+
+            <!--button class="info_more-btn" data-sidebar-btn>
+                <span>Show Contacts</span>
+                <ion-icon name="chevron-down"></ion-icon>
+            </button-->
+        </div>
+
+        <div class="sidebar-info_more">
+            <div class="separator"></div>
+            <ul class="contacts-list">
+                <!-- email -->
+                <li class="contacts-item">
+                    <div class="icon-box">
+                        <ion-icon name="glasses-outline"></ion-icon>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-title">Title</p>
+                        <address>Master's degree student</address>
+                    </div>
+                </li>
+
+                <!-- email -->
+                <li class="contacts-item">
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-title">Email</p>
+                        <address>elsashaw@whu.edu.cn</address>
+                        <address>Iamurdiee@qq.com</address>
+                    </div>
+                </li>
+
+                <!-- phone -->
+                <!--li class="contacts-item">
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-title">Phone</p>
+                        <a class="contact-link" href="tel:">+86 ***********</a>
+                    </div>
+                </li-->
+
+                <!-- birthday -->
+                <!--li class="contacts-item">
+                    <div class="icon-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-title">Birthday</p>
+                        <time datetime="2000-08-25">Aug 25, 2000</time>
+                    </div>
+                </li-->
+
+                <!-- affiliation -->
+                <li class="contacts-item">
+                    <div class="icon-box">
+                        <ion-icon name="school-outline"></ion-icon>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-title">Affiliation</p>
+                        <address>School of Computer Science, Wuhan University</address>
+                    </div>
+                </li>
+            </ul>
+
+            <!--ul class="contacts-list">
+                <li class="social-item">
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="./assets/images/google-scholar.png" alt="My Image" width="15">
+                    </a>
+                </li>
+            </ul-->
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navbar -->
+
+        <!--nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item-">
+                    <button class="navbar-link" data-nav-link>About</button>
+                </li>
+
+                <li class="navbar-item-">
+                    <button class="navbar-link" data-nav-link>Resume</button>
+                </li>
+
+                <li class="navbar-item-">
+                    <button class="navbar-link" data-nav-link>Portfolio</button>
+                </li>
+
+                <li class="navbar-item-">
+                    <button class="navbar-link" data-nav-link>Blog</button>
+                </li>
+
+                <li class="navbar-item-">
+                    <button class="navbar-link" data-nav-link>Contact</button>
+                </li>
+            </ul>
+        </nav-->
+
+        <!-- About -->
+        <article class="about active" data-page="about">
+            <header>
+                <h2 class="h2 article-title">About Me</h2>
+            </header>
+
+            <section class="about-text">
+                <p>I'm currently in my second year of graduate study in Wuhan University, majoring in Artificial Intelligence. My supervisor is professor <a href="https://cs.whu.edu.cn/info/1019/2893.htm" class="link-text" target="_blank">Min Peng</a>.</p>
+                
+                <p>My research explores the application of Large Language Models (LLMs) in detecting mental health issues and enhancing psychotherapy, alongside technologies like Retrieval-Augmented Generation (RAG) and Multimodal LLMs.</p>
+            </section>
+
+            <!-- Service -->
+            <section class="service">
+                <h3 class="h3 service-title"> What I'm Doing</h3>
+                <ul class="'service-list">
+                    <li class="service-item">
+                        <div class="service-icon-box">
+                            <img src="./assets/images/psychology.png" alt="design icon" width="40">
+                        </div>
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Research: Psychology x LLM</h4>
+                            <p class="service-item-text">
+                                Mental health issue detection and healing.
+                            </p>
+                        </div>
+                    </li>
+                    
+                    <li class="service-item">
+                        <div class="service-icon-box">
+                            <img src="./assets/images/stock.png" alt="design icon" width="40">
+                        </div>
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Research: Finance x LLM</h4>
+                            <p class="service-item-text">
+                                Stock movement prediction using RAG.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-icon-box">
+                            <img src="./assets/images/xcode-12-96x96_2x.png" alt="design icon" width="40">
+                        </div>
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">iOS Development</h4>
+                            <p class="service-item-text">
+                                Swift programming for mobile apps.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="service-item">
+                        <div class="service-icon-box">
+                            <img src="./assets/images/js_logo.png" alt="design icon" width="40">
+                        </div>
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">Front-end Development</h4>
+                            <p class="service-item-text">
+                                React native programming for mobile apps and web pages.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- papers -->
+            <section class="testimonials">
+                <h3 class="h3 testimonials-title">Papers</h3>
+                <!--ul class="testimonials-list has-scrollbar"-->
+                <ul>
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                [ACL 2024] HealMe: Harnessing Cognitive Reframing in Large Language Models for Psychotherapy
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    <i><b>Mengxi Xiao</b>, Qianqian Xie, Ziyan Kuang, Zhicheng Liu, Kailai Yang, Min Peng, Weiguang Han, Jimin Huang</i>
+                                </p>
+                                <p><a href="https://arxiv.org/abs/2403.05574" class="link-text" target="_blank">[paper]</a> <a href="https://github.com/elsa66666/HealMe" class="link-text" target="_blank">[code]</a></p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                [IJCNN 2024] Clarified Aggregation and Predictive Modeling (CAPM): High-Interpretability Framework for Inductive Link Prediction
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    <i><b>Mengxi Xiao</b>, Ben Liu, Miao Peng, Wenjie Xu, Min Peng</i>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                Mirror: Reflecting on Cognitive Errors Through Large Language Models in Psychotherapy
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    <i><b>Mengxi Xiao</b>, Ziyan Kuang, Xinyue Jiang, Jimin Huang, Qianqian Xie, Min Peng</i>
+                                </p>
+                            </div>
+                        </div>
+                    </li-->
+
+                    <!--li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                StockMaven: Retrieval-Augmented Large Language Models for Stock Movement Prediction
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>
+                                    <i><b>Mengxi Xiao</b>, Zhengyu Chen, Zihao Jiang, Dong Li, Jimin Huang, Min Peng, Sophia Ananiadou, Qianqian Xie</i>
+                                </p>
+                            </div>
+                        </div>
+                    </li-->
+
+                </ul>
+            </section>
+
+            <!-- modeling competitions -->
+            <section class="testimonials">
+                <h3 class="h3 testimonials-title">Modeling Competitions</h3>
+                <!--ul class="testimonials-list has-scrollbar"-->
+                <ul>
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                Third Prize in the 14th National College Students' Computer Design Competition
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>2021.6, based on SIR-F</p>
+                                    <p> 第⼗四届全国⼤学⽣计算机设计⼤赛全国三等奖 </p>
+                                    <p>
+                                        <i><b>Mengxi Xiao (Team Leader)</b>, Yuning Wu, Yunpu Zhao</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                National Level Excellent Completion Award, National College Students' Innovation and Entrepreneurship Training Program 
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>2019.3 - 2020.9, based on AlexNet</p>
+                                <p>全国⼤学⽣创新创业训练计划(国家级)优秀结项</p>
+                                <p>
+                                    <i>Maoxing Ye, Xiaowen Shang, Jiahao Lin, <b>Mengxi Xiao</b>, Yuning Wu</i>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                Meritorious Winner, 2021 USA Mathematical Modeling Competition
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>2021.4, based on Linear Regression</p>
+                                <p>美国数学建模⽐赛M奖</p>
+                                <p>
+                                    <i>Youyi Chen, <b>Mengxi Xiao</b>, Xu Yan</i>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Software Development -->
+            <section class="testimonials">
+                <h3 class="h3 testimonials-title">Software Development</h3>
+                <!--ul class="testimonials-list has-scrollbar"-->
+                <ul>
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                Third Prize in the 2020 China College Student Computer Competition Mobile Application Innovation Contest (National)
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>2020.11, iOS Development, Alibaba Cloud Database, ARKit</p>
+                                <p>2020中国⾼校计算机⼤赛移动应⽤创新赛全国三等奖</p>
+                                <p>
+                                    <i><b>Mengxi Xiao (Team Leader)</b>, Youyi Chen, Tianyue Yang</i>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                Third Prize in the Sixteenth "Citi Cup" Financial Innovation Application Competition (National)
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>2021.5, React Native Application Development</p>
+                                    <p>第⼗六届“花旗杯”⾦融创新应⽤⼤赛全国三等奖</p>
+                                    <p>
+                                        <i>Yu Wang, Yuhao Zhang, Hengyi Wang, Yimiao Liu, Yuxing Zong, Kang He, Zhesheng Liu, Baizhi Huang, Xiaoyang Li, <b>Mengxi Xiao</b>, etc.</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
 
+                </ul>
+            </section>
+                
+            <!-- Programming -->
+            <section class="testimonials">
+                <h3 class="h3 testimonials-title">Programming</h3>
+                <!--ul class="testimonials-list has-scrollbar"-->
+                <ul>
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                Second Prize in the Twelfth Blue Bridge Cup Competition (Software Category, Python Group) (Provincial)
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>2021.4</p>
+                                <p>第⼗⼆届蓝桥杯⼤赛软件类(Python组)省⼆等奖</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="testimonials-item">
+                        <div class="content-card" data-testimonials-item>
+                            <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                Swift Developer Certification
+                            </h4>
+                            <div class="testimonials-text" data-testimonials-text>
+                                <p>2020.11</p>
+                            </div>
+                        </div>
+                    </li>
 
 
+                </ul>
+            </section>
+        </article>
+
+        <!-- Resume -->
+        <article class="resume" data-page="resume">
+            <h2 class="h2 article-title">Resume</h2>
+
+            <section class="timeline">
+                <div class="title-wraper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+                    <h3 class="h3">Education</h3>
+                </div>
+
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Wuhan University</h4>
+                        <span>2022.9-Present</span>
+                        <p class="timeline-text">
+                            Artificial Intelligence
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Wuhan University</h4>
+                        <span>2018.9-2022.6</span>
+                        <p class="timeline-text">
+                            Computer Science and Technology
+                        </p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="timeline">
+                <div class="title-wraper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+                    <h3 class="h3">Experience</h3>
+                </div>
+
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Intern</h4>
+                        <span>2024.8-Present</span>
+                        <p class="timeline-text">
+                            The FinAI
+                        </p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="skills">
+                <h3 class="h3 skills-title">My Skills</h3>
+                <ul class="skills-list content-card">
+                    <li class="skills-item">
+                        <div class="title-wrapper">
+                            <h5 class="h5">Web Design</h5>
+                            <data value="80">80%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </li>
+
+                    <li class="skills-item">
+                        <div class="title-wrapper">
+                            <h5 class="h5">Web Design</h5>
+                            <data value="80">80%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </li>
+
+                    <li class="skills-item">
+                        <div class="title-wrapper">
+                            <h5 class="h5">Web Design</h5>
+                            <data value="80">80%</data>
+                        </div>
+                        <div class="skill-progress-bg">
+                            <div class="skill-progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- PortFolio -->
+        <article class="portfolio" data-page="portfolio">
+            <header>
+                <h2 class="h2 article-title">Portfolio</h2>
+            </header>
+            <section class="projects">
+                <ul class="filter-list">
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+                    <li class="filter-item">
+                        <button data-filter-btn>Web Design</button>
+                    </li>
+                    <li class="filter-item">
+                        <button data-filter-btn>Web Applications</button>
+                    </li>
+                    <li class="filter-item">
+                        <button data-filter-btn>Digital Marketing</button>
+                    </li>
+                </ul>
+                    
+                <div class="filter-select-box">
+                    <button class="filter-select" data-select> 
+                        <div class="select-value" data-select-value>Select Category</div>
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+                    </button>
+
+                    <ul class="select-list">
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+                        <li class="select-item">
+                            <button data-select-item>Web Design</button>
+                        </li>
+                        <li class="select-item">
+                            <button data-select-item>Web Applications</button>
+                        </li>
+                        <li class="select-item">
+                            <button data-select-item>Digital Marketing</button>
+                        </li>
+                    </ul>
+                        
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/project-1.jpg" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Finance</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/project-1.jpg" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Finance</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/project-1.jpg" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Finance</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/project-1.jpg" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Finance</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+                    </ul>
+                        
+                
+            </section>
+        </article>        
+
+        <!-- Blog -->
+        <article class="blog" data-page="blog">
+            <header>
+                <h2 class="h2 article-title">Blog</h2>
+            </header>
+            <section class="blog-title">
+                <ul class="blog-posts-list">
+                    <li class="blog-post-item">
+                        <a_href="#">
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-1.jpg" alt="" loading="lazy">
+                            </figure>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+                                    <span class="dot"></span>
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+                                <h3 class="h3 blog-item-title">
+                                    Design Conference in 2022
+                                </h3>
+                                <p class="blog-text">
+                                    My blog content ...
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="blog-post-item">
+                        <a_href="#">
+                            <figure class="blog-banner-box">
+                                <img src="./assets/images/blog-1.jpg" alt="" loading="lazy">
+                            </figure>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <p class="blog-category">Design</p>
+                                    <span class="dot"></span>
+                                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                                </div>
+                                <h3 class="h3 blog-item-title">
+                                    Design Conference in 2022
+                                </h3>
+                                <p class="blog-text">
+                                    My blog content ...
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </article>     
+        
+        
+
+    </div>
+</main>
+
+
+<style>
+    
+</style>
 
 
 
